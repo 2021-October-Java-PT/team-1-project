@@ -1,2 +1,4 @@
-package org.wecancodeit.com.project;public class CountryController {
+package org.wecancodeit.com.project.controllers;
+
+public class CountryController {
 }
