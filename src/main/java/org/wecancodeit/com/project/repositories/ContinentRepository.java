@@ -1,2 +1,2 @@
-package org.wecancodeit.com.project.repositories;public class ContinentRepository {
-}
+package org.wecancodeit.com.project.repositories;
+
