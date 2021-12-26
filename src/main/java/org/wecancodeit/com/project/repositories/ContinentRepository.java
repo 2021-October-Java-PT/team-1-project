@@ -1,2 +1,6 @@
-package org.wecancodeit.com.project.repositories;public class ContinentRepositroy {
+package org.wecancodeit.com.project.repositories;
+
+public interface ContinentRepository {
+
 }
+
