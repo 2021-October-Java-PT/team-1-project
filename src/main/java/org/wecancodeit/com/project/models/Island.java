@@ -1,7 +1,8 @@
 package org.wecancodeit.com.project.models;
 
-import javax.persistence.*;
-import java.util.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 @Entity
 public class Island {
@@ -14,6 +15,9 @@ public class Island {
     private String country;
     private String waterway;
     public String description;
+
+    public Island() {
+    }
 
     public Island(long id, String imgUrl, String continent, String country, String waterway, String description_goes_here) {
     }
