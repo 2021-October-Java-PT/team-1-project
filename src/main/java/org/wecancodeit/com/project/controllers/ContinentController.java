@@ -1,11 +1,5 @@
-package org.wecancodeit.com.project;
-
-
+package org.wecancodeit.com.project.controllers;
 
 public class ContinentController {
-
-
-
-
 
 }
