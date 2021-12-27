@@ -11,6 +11,7 @@ import java.util.Objects;
 public class Continent {
     @Id
     @GeneratedValue
+
     private Long id;
     private String name;
     private String imageUrl;

@@ -23,9 +23,6 @@ public class Island {
     public Island() {
     }
 
-    public Island(long id, String imgUrl, String continent, String country, String waterway, String description_goes_here) {
-
-    }
 
 
     public Long getId() {
