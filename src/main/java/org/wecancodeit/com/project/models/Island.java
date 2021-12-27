@@ -15,7 +15,7 @@ public class Island {
     private String waterway;
     public String description;
 
-    public Island(long id, String imgUrl, String continent, String country, String waterway, String description_goes_here) {
+    public Island(Long id, String imgUrl, String continent, String country, String waterway, String description_goes_here) {
     }
 
 
