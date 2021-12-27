@@ -1,8 +1,7 @@
 package org.wecancodeit.com.project.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.*;
 
 @Entity
 public class Island {
@@ -11,11 +10,15 @@ public class Island {
     private Long id;
     private String name;
     private String imageUrl;
+    @ManyToOne
     private String continent;
+    @ManyToMany
     private String country;
+    @ManyToMany
     private String waterway;
     public String description;
-
+    @ManyToMany
+    private Set<HashTag> hashTags;
 
     public Island() {
     }
