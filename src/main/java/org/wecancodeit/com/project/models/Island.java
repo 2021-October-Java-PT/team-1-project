@@ -56,8 +56,7 @@ public class Island {
         return description;
     }
 
-    public Island(Long id, String name, String imageUrl, String continent, String country, String waterway, String description) {
-        this.id = id;
+    public Island(String name, String imageUrl, String continent, String country, String waterway, String description) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.continent = continent;

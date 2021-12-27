@@ -40,12 +40,12 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(Europe);
         continentRepo.save(Australia);
 
-        Country republicFiji = new Country();
-        Country italy = new Country();
-        Country usa = new Country();
-        Country venezuela = new Country();
-        Country capoVerde = new Country();
-        Country thailand = new Country();
+        Country republicFiji = new Country( "Republic of Fiji", "image url here");
+        Country italy = new Country("italy", "image url here");
+        Country usa = new Country("United States of America", "image Url here");
+        Country venezuela = new Country("Venezuela", "image Url here");
+        Country capoVerde = new Country("Capo Verde", "image url here");
+        Country thailand = new Country("Thailand", "image url here");
         countryRepo.save(republicFiji);
         countryRepo.save(italy);
         countryRepo.save(usa);
@@ -53,17 +53,17 @@ public class Populator implements CommandLineRunner {
         countryRepo.save(capoVerde);
         countryRepo.save(thailand);
 
-        Island fiji = new Island();
-        Island levanzo = new Island();
-        Island maui = new Island();
-        Island laTortuga = new Island();
-        Island santigoIsland = new Island();
-        Island similanIslands = new Island();
+        Island fiji = new Island("Fiji", "image url here", "continent here", "country here", "waterway here", "decript here");
+        Island levanzo = new Island("Levanzo", "image url here", "continent here", "country here", "waterway here", "decript here");
+        Island maui = new Island("Maui", "image url here", "continent here", "country here", "waterway here", "decript here");
+        Island laTortuga = new Island("LaTortuga", "image url here", "continent here", "country here", "waterway here", "decript here");
+        Island santiagoIsland = new Island("Santiago Island", "image url here", "continent here", "country here", "waterway here", "decript here");
+        Island similanIslands = new Island("Similan Islands ", "image url here", "continent here", "country here", "waterway here", "decript here");
         islandRepo.save(fiji);
         islandRepo.save(levanzo);
         islandRepo.save(maui);
         islandRepo.save(laTortuga);
-        islandRepo.save(santigoIsland);
+        islandRepo.save(santiagoIsland);
         islandRepo.save(similanIslands);
     }
 }
