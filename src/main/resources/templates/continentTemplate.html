@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css"></link>
+    <title th:text="${continentModel.name}">A Continent</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <section>
+            <button>
+                <a th:href="@{/}">Home</a>
+            </button>
+        </section>
+    </nav>
+
+    <header>
+        <h1 th:text="${continentModel.name}">A Continent</h1>
+    </header>
+
+    <main>
+        <img th:src="${countryModel.img_url}">
+
+        <ul>
+            <p><a href="/country">Countries</a></p>
+            <li th:text="${countryModel.name}"></li>
+
+        </ul>
+        <h2 th:text="${countryModel.description}"></h2>
+
+    </main>
+
+    <footer>
+        <small>&copy WCCI 2022</small>
+    </footer>
+</div>
+</body>
+</html>
