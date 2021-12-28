@@ -28,7 +28,7 @@ public class Populator implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Continent northAmerica = new Continent("North America", "image Url here");
-        Continent SouthAmerica = new Continent("Southth America", "image Url here");
+        Continent SouthAmerica = new Continent("South America", "image Url here");
         Continent Africa = new Continent("Africa", "image Url here");
         Continent Asia = new Continent("Asia", "image Url here");
         Continent Europe = new Continent("Europe", "image Url here");
