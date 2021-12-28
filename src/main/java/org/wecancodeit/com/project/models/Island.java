@@ -12,13 +12,26 @@ public class Island {
     private String imageUrl;
     @ManyToOne
     private String continent;
-    @ManyToMany
+    @ManyToOne
     private String country;
     @ManyToMany
     private String waterway;
     public String description;
     @ManyToMany
     private Set<HashTag> hashTags;
+
+    @ManyToMany
+    @JoinTable(name = "island_countries",
+            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
+    private List<Country> countries = new ArrayList<>();
+
+    public List<Country> getCountries() {
+        return countries;
+    }
+
+    public void setCountries(List<Country> countries) {
+        this.countries = countries;
+    }
 
     public Island() {
     }
@@ -60,6 +73,27 @@ public class Island {
         this.country = country;
         this.waterway = waterway;
         this.description = description;
+        this.hashTags = new HashSet<>();
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Island island = (Island) o;
+        return Objects.equals(id, island.id);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    public void addHashTag(HashTag hashTagToAdd) {
+        hashTags.add(hashTagToAdd);
+    }
+
+    public void deleteHashTag(HashTag hashTagToRemove) {
+        hashTags.remove(hashTagToRemove);
+    }
 }
+
