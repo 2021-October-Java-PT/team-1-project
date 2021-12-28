@@ -12,17 +12,16 @@ public class Country {
     private Long id;
     private String name;
     private String imageUrl;
-    private String description;
+
 
     public Country(){
 
     }
 
-    public Country(Long id, String name, String imageUrl, String description){
-        this.id = id;
+    public Country(String name, String imageUrl){
         this.name = name;
         this.imageUrl = imageUrl;
-        this.description = description;
+
     }
 
     public Long getId() {
@@ -37,7 +36,4 @@ public class Country {
         return imageUrl;
     }
 
-    public String getDescription() {
-        return description;
-    }
 }

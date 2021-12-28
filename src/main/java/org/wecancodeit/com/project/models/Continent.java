@@ -34,6 +34,11 @@ public class Continent {
 
     }
 
+    public Continent(String name, String imageUrl){
+        this.name = name;
+        this.imageUrl = imageUrl;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
