@@ -12,26 +12,36 @@ public class Island {
     private String imageUrl;
 
     private String continent;
+
     //why field on line 16 and then collection on line 26
     private String country;
+
+
+    @ManyToMany
+    
 
     private String waterway;
     public String description;
     @ManyToMany
     private Set<HashTag> hashTags;
 
+
     @ManyToMany
 //    @JoinTable(name = "island_countries",
 //            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
+
     private List<Country> countries = new ArrayList<>();
-
-    public List<Country> getCountries() {
+ 
+public List<Country> getCountries() {
         return countries;
-    }
+  }
 
-    public void setCountries(List<Country> countries) {
-        this.countries = countries;
+    public Collection<HashTag> getHashTags(){
+        return hashTags;
     }
+   public void setCountries(List<Country> countries) {
+       this.countries = countries;
+   }
 
     public Island() {
     }
