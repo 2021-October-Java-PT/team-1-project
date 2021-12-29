@@ -10,19 +10,19 @@ public class Island {
     private Long id;
     private String name;
     private String imageUrl;
-    @ManyToOne
+
     private String continent;
-    @ManyToOne
+    //why field on line 16 and then collection on line 26
     private String country;
-    @ManyToMany
+
     private String waterway;
     public String description;
     @ManyToMany
     private Set<HashTag> hashTags;
 
     @ManyToMany
-    @JoinTable(name = "island_countries",
-            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
+//    @JoinTable(name = "island_countries",
+//            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
     private List<Country> countries = new ArrayList<>();
 
     public List<Country> getCountries() {
