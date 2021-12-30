@@ -16,16 +16,12 @@ public class Country {
     private String name;
     private String imageUrl;
     private String continent;
-    private String waterWay;
     @ManyToMany(mappedBy = "countries")
     private Collection<Island> islands;
 
     public String getContinent() {
         return continent;
-    }
 
-    public String getWaterWay() {
-        return waterWay;
     }
 
     public Long getId() {
@@ -43,9 +39,9 @@ public class Country {
     public Country(){
 
     }
-    public Country(String continent, String waterWay) {
+    public Country(String continent, String imageUrl) {
         this.continent = continent;
-        this.waterWay = waterWay;
+        this.imageUrl = imageUrl;
     }
 
     @Override
