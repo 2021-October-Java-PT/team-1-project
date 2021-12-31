@@ -18,7 +18,7 @@ public class Island {
 
 
 
-    @ManyToMany
+//    @ManyToMany
    
     private String waterway;
     public String description;
@@ -28,7 +28,7 @@ public class Island {
 
     @ManyToMany
 
-    private List<Country> countries = new ArrayList<>();
+//    private List<Country> countries = new ArrayList<>();
 
 //    @JoinTable(name = "island_countries",
 //            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))

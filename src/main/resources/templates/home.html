@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Island Hopper</title>
+
 </head>
 <body>
+<div class ="container">
+    <main>
+        <h1>Island Hopper - Tour Guide</h1>
+        <h2>Let us show you the time of your life.</h2>
+            <nav>
+                <a th:href="@{/}">Home</a>
+                <a th:href="@{/Continents}">Continents</a>
+                <a th:href="@{/countries}">Countries</a>
+                <a th:href="@{/islands}">Islands</a>
+                <a href="aboutUsTemplate.html">About Us</a>
+
+<!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+            </nav>
+        <figure>
+           <img src="/images/world-map.gif" alt="a world map" />
+        </figure>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <small>&copy; wecancodeit 2021</small>
+    </footer>
+</div>
 
 </body>
 </html>

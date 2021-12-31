@@ -18,11 +18,19 @@ public class IslandController {
         return "home";
     }
 
-   @RequestMapping("/islands")
-   public String findAllIslands(Model model) {
-       model.addAttribute("islandsModel", islandRepo.findAll());
-    return "islandsTemplate";
- }
+    @RequestMapping("/islands")
+    public String findAllIslands(Model model) {
+        model.addAttribute("islandsModel", islandRepo.findAll());
+        return "islandsTemplate";
+    }
+
+//    @RequestMapping("/aboutUs")
+//    public String aboutUs(Model model) {
+//        model.addAttribute("aboutUs", aboutUsRepo.findAll());
+//        return "aboutUsTemplate";
+//    }
+
+
 
 }
 
