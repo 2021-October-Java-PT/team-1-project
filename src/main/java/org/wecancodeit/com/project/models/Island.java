@@ -16,6 +16,12 @@ public class Island {
     //why field on line 16 and then collection on line 26
     private String country;
 
+
+
+
+//    @ManyToMany
+
+ main
    
     private String waterway;
     public String description;
@@ -25,7 +31,7 @@ public class Island {
 
     @ManyToMany
 
-    private List<Country> countries = new ArrayList<>();
+//    private List<Country> countries = new ArrayList<>();
 
 //    @JoinTable(name = "island_countries",
 //            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
