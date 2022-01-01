@@ -10,23 +10,16 @@ public class Island {
     private Long id;
     private String name;
     private String imageUrl;
-
     private String continent;
 
     //why field on line 16 and then collection on line 26
     private String country;
-
-
-
-
-//    @ManyToMany
-
- main
-   
     private String waterway;
     public String description;
     @ManyToMany
     private Set<HashTag> hashTags;
+    @ManyToMany
+    private List<Country> countries = new ArrayList<>();
 
 
     @ManyToMany
