@@ -10,43 +10,25 @@ public class Island {
     private Long id;
     private String name;
     private String imageUrl;
+
     private String continent;
 
-    //why field on line 16 and then collection on line 26
-    private String country;
     private String waterway;
     public String description;
+    @ManyToOne
+    private Country country;
+    @ManyToMany
+    private Collection<Country> countries;
     @ManyToMany
     private Set<HashTag> hashTags;
-    @ManyToMany
-    private List<Country> countries = new ArrayList<>();
 
-
-    @ManyToMany
-
-//    private List<Country> countries = new ArrayList<>();
-
-//    @JoinTable(name = "island_countries",
-//            joinColumns = @JoinColumn(name = "island_id", referencedColumnName = "countries_id"))
-
-
-// private List<Country> countries = new ArrayList<>();
- 
-public List<Country> getCountries() {
-        return countries;
-  }
-
-    public Collection<HashTag> getHashTags(){
+    public Collection<HashTag> getHashTags() {
         return hashTags;
     }
-   public void setCountries(List<Country> countries) {
-       this.countries = countries;
-   }
 
-    public Island() {
+    public void setCountries(List<Country> countries) {
+        this.countries = countries;
     }
-
-
 
     public Long getId() {
         return id;
@@ -64,9 +46,6 @@ public List<Country> getCountries() {
         return continent;
     }
 
-    public String getCountry() {
-        return country;
-    }
 
     public String getWaterway() {
         return waterway;
@@ -76,15 +55,18 @@ public List<Country> getCountries() {
         return description;
     }
 
+    public Island() {
+    }
+
     public Island(String name, String imageUrl, String continent, String country, String waterway, String description) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.continent = continent;
-        this.country = country;
         this.waterway = waterway;
         this.description = description;
         this.hashTags = new HashSet<>();
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

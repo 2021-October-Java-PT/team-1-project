@@ -52,6 +52,3 @@ public class Continent {
         return Objects.hash(id);
     }
 }
-
-
-

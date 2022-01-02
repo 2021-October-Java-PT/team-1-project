@@ -1,35 +1,75 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Island Hopper</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Team-1-Project</title>
 
 </head>
 <body>
-<div class ="container">
-    <main>
-        <h1>Island Hopper - Tour Guide</h1>
-        <h2>Let us show you the time of your life.</h2>
-            <nav>
-                <a th:href="@{/}">Home</a>
-                <a th:href="@{/Continents}">Continents</a>
-                <a th:href="@{/countries}">Countries</a>
-                <a th:href="@{/islands}">Islands</a>
-                <a href="aboutUsTemplate.html">About Us</a>
+    <div class="container">
+        <header class="header">
+            <h1>JAC's Island Hopping</h1>
+            <p>JAC's Motto: "Vincit Qui Se Vincit!" which means, "He/she conquers who conquers him/herself!"</p>
+        </header>
 
-<!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
-            </nav>
-        <figure>
-           <img src="/images/world-map.gif" alt="a world map" />
-        </figure>
-        <section>
+        <section class="explanation">
+            <h2>What is Island Hopping?</h2>
+            <p><!--Explanation of island hopping goes here --></p>
 
-        </section>
-    </main>
-    <footer>
-        <small>&copy; wecancodeit 2021</small>
-    </footer>
-</div>
+            <div id="examples">
+                <article>
+                    <h3><!--First Example--></h3>
+                    <img src=<!--image of first example-->
+                    <p><!--Description of first example--></p>
+                </article>
 
+                <article>
+                    <h3><!--Second Example--></h3>
+                    <img src=<!--image of second example-->
+                    <p><!--Description of second example--></p>
+                    <h3><!--Third Example--></h3>
+                    <img src=<!--image of third example-->
+                    <p><!--Description of third example--></p>
+                    <h1>Island Hopper - Tour Guide</h1>
+                    <h2>Let us show you the time of your life.</h2>
+                    <nav>
+                        <a th:href="@{/}">Home</a>
+                        <a th:href="@{/Continents}">Continents</a>
+                        <a th:href="@{/countries}">Countries</a>
+                        <a th:href="@{/islands}">Islands</a>
+                        <a href="aboutUsTemplate.html">About Us</a>
+
+                        <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+                    </nav>
+                    <figure>
+                        <img src="/images/world-map.gif" alt="a world map" />
+                    </figure>
+
+                </article>
+            </div>
+         </section>
+
+         <section class="search">
+             <h2>Find your next adventure!</h2>
+             <p>JAC's offers Island Hopping adventures all over the globe!</p>
+         </section>
+
+         <nav>
+             <a href="#aboutUs">About JAC's</a>
+             <a href="#examples">Best of Island Hopping</a>
+             <a href="#search">Find an Adventure</a>
+         </nav>
+
+         <footer>
+             &JAC's Enterprises 2021
+             &Team1 2021
+         </footer>
+
+
+    </div>
 </body>
 </html>
