@@ -40,7 +40,7 @@ public class Populator implements CommandLineRunner {
         continentRepo.save(Europe);
         continentRepo.save(Australia);
 
-        Country republicFiji = new Country( "Republic of Fiji", "image url here");
+        Country republicFiji = new Country( "Republic of Fiji", "/images/world-map.gif");
         Country italy = new Country("italy", "image url here");
         Country usa = new Country("United States of America", "image Url here");
         Country venezuela = new Country("Venezuela", "image Url here");
