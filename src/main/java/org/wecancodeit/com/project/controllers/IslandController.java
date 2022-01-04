@@ -18,7 +18,7 @@ public class IslandController {
         return "home";
     }
 
-    @RequestMapping("/islands")
+    @RequestMapping("/islands/")
     public String displayAllIslands(Model model) {
         model.addAttribute("islandsModel", islandRepo.findAll());
         return "islandsTemplate";

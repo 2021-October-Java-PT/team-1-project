@@ -13,25 +13,27 @@
 <body>
 <header class="header">
     <h1 class="header__title">Choose Your Adventure</h1>
-    <h2 th:text="${continent.name}">Name</h2>
+    <ul th:each="continent:${continentsModel}">
+        <li><h2 th:text="${continent.id}">Name</h2></li>
+    </ul>
 </header>
-<section class="island-list">
-    <h2 class="island-list__heading">Islands:</h2>
-    <nav class="island-list-nav">
-        <ul class="island-list-links">
-            <li class="island-list-links__island" th:each="island:${continent.islands}">
-                <a class="island-list-links__link" th:href="@{'/islands/'+ ${island.id}}"
-                   th:text="${island.name}">Fiji</a>
-            </li>
+<!--<section class="island-list">-->
+<!--    <h2 class="island-list__heading">Islands:</h2>-->
+<!--    <nav class="island-list-nav">-->
+<!--        <ul class="island-list-links">-->
+<!--            <li class="island-list-links__island" th:each="island:${continent.islands}">-->
+<!--                <a class="island-list-links__link" th:href="@{'/islands/'+ ${island.id}}"-->
+<!--                   th:text="${island.name}">Fiji</a>-->
+<!--            </li>-->
 
-        </ul>
-    </nav>
-    <a class="nav__home" href="/continents">back to continents</a>
-    <form method="POST" th:action="'/continents/'+ ${continent.name} + '/add-island'">
-        <input name="continentId" th:value="${continent.id}" type="hidden">
-        <input type="text">
-    </form>
-</section>
+<!--        </ul>-->
+<!--    </nav>-->
+<!--    <a class="nav__home" href="/continents">back to continents</a>-->
+<!--    <form method="POST" th:action="'/continents/'+ ${continent.name} + '/add-island'">-->
+<!--        <input name="continentId" th:value="${continent.id}" type="hidden">-->
+<!--        <input type="text">-->
+<!--    </form>-->
+<!--</section>-->
 </body>
 
 </html>
