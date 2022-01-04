@@ -1,15 +1,14 @@
-*{
-    font-size:30px
-    font-style:courier;
+p{
+    color:black;
 }
 
 body{
-    padding: 50px;
-    background-color: lightblue;
-      display: block;
-      min-width: 750px;
-      margin-top: 0;
-      height: 100%;
+  background-color: lightblue;
+  display: block;
+  min-width: 750px;
+  margin-top: 0;
+  height: 100%;
+
 }
 
 ul {
@@ -34,4 +33,11 @@ ul {
 
   li a:hover {
       background-color: #111;
+  }
+
+  img{
+      height: 300px;
+      width: 300px
+      border: 2px;
+      border-color: blue;
   }
