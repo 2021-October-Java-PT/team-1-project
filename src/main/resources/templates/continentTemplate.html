@@ -14,7 +14,7 @@
 <header class="header">
     <h1 class="header__title">Choose Your Adventure</h1>
     <ul th:each="continent:${continentsModel}">
-        <li><h2 th:text="${continent.id}">Name</h2></li>
+        <li><h2 th:text="${continent.name}">Name</h2></li>
     </ul>
 </header>
 <!--<section class="island-list">-->
