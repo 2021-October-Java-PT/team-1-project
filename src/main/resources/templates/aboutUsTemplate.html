@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Mock About Us</title>
 
-  <link rel="stylesheet" href="stylesheet.css" type = text/css>
 
 </head>
 <body>
 <header>
 
   <nav>
-    <a href="#Homepage">Homepage</a>
-    <a href="about us">About Us</a>
-    <a href="#continents">Continents</a>
-    <a href="#countries">Countries</a>
-    <a href="Contact us">Contact us</a>
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/Continents}">Continents</a>
+    <a th:href="@{/countries}">Countries</a>
+    <a th:href="@{/islands}">Islands</a>
+    <a href="aboutUsTemplate.html">About Us</a>
   </nav>
 
 </header>
