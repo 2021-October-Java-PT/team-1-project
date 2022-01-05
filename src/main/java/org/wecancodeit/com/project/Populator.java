@@ -53,12 +53,14 @@ public class Populator implements CommandLineRunner {
         countryRepo.save(capeVerde);
         countryRepo.save(thailand);
 
+
         Island fiji = new Island("Fiji", "/static/images/Fiji.jpg", "Australia", "Republic of Fiji", "South Pacific Ocean", "Fiji is a Melanesian country in the south pacific Ocean.  Its made up about 332 islands.  The climiate is mostly tropical with only slight variations throughout the seasons (Possible chance of tropical cyclonic storms from November through April).");
         Island levanzo = new Island("Levanzo", "/static/images/levanzoIsland.jpg", "Europe", "Italy", "Mediterranean Sea", "Levanzo is one of the most beautiful islands in Italy.  Its surrounded by the blue green waters of the Mediterranean Sea.  The island is also characterized by the white limestone rocks and many caves to visit.  There is plenty to do ranging from trekking, beaches, diving, boat tours etc.");
         Island maui = new Island("Maui", "/static/images/mauiIsland.jpg", "North America", "US", "Central Pacific", "Maui, known also as “The Valley Isle,” is the second largest Hawaiian island. The island beloved for its world-famous beaches, the sacred Iao Valley, views of migrating humpback whales (during winter months), farm-to-table cuisine and the magnificent sunrise and sunset from Haleakala.");
         Island laTortuga = new Island("LaTortuga", "/static/images/LaTortuga.jpg", "South America", "Venezuela", "Caribbean Sea", "La Tortuga Island (Spanish: Isla La Tortuga; \"La Tortuga\" means \"the turtle\") is an uninhabited island of Venezuela, the largest in the Federal Dependencies of Venezuela. It is part of a group of islands that include the Tortuguillos and Cayo Herradura");
         Island santiagoIsland = new Island("Santiago Island", "/static/images/santiago.jpg", "Africa", "Cape Verde", "Central Atlantic", "This island consist of two overlapping volcanoes.  Common wildlife that can be seen on or around the island are: fur seals, sea lions, lightfoot crabs, marine iguana, dolphins, rice rats, and sharks.");
         Island similanIslands = new Island("Similan Islands ", "/static/images/similan.jpg", "Asia", "Thailand", "Caribbean Sea", "The Similan Islands are an archipelago of 11 islands in the Andaman Sea 70 kilometers off the coast of southern Thailand's Phang Nga Province, the Similan Islands. The island is best known as a diving and snorkeling destination, but the Similans' scenic moorings have also become popular with the sailing fraternity.");
+
         islandRepo.save(fiji);
         islandRepo.save(levanzo);
         islandRepo.save(maui);
