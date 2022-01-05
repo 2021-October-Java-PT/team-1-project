@@ -11,6 +11,11 @@ body{
 
 }
 
+.alert__link {
+    color: #005edc;
+    flex-grow: 1;
+    font-family: "ProximalNova-Regular",Arial,sans-serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
