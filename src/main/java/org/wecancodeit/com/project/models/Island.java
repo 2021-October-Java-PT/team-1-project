@@ -14,6 +14,7 @@ public class Island {
     private String continent;
 
     private String waterway;
+    @Lob
     public String description;
     @ManyToOne
     private Country country;

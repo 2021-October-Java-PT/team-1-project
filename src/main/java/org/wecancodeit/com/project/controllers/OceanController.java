@@ -4,20 +4,21 @@ package org.wecancodeit.com.project.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.wecancodeit.com.project.repositories.CountryRepository;
+
+import org.wecancodeit.com.project.repositories.OceanRepository;
 
 import javax.annotation.Resource;
 
 @Controller
-public class CountryController {
+public class OceanController {
 
    @Resource
-     private CountryRepository countryRepo;
+     private OceanRepository oceanRepo;
 
-   @RequestMapping("/countries")
-   public String displayCountries(Model model){
-       model.addAttribute("countries", countryRepo.findAll());
-       return "countriesTemplate";
+   @RequestMapping("/oceans")
+   public String displayOceans(Model model){
+       model.addAttribute("oceans", oceanRepo.findAll());
+       return "oceansTemplate";
 
 
 

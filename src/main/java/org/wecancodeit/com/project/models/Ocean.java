@@ -8,15 +8,15 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-public class Continent {
+public class Ocean {
     @Id
     @GeneratedValue
 
     private Long id;
     private String name;
     private String imageUrl;
-    @OneToMany(mappedBy = "continent")
-    private Collection<Island> islands;
+    @OneToMany(mappedBy = "oceans")
+    private Collection<Ocean> oceans;
 
     public Long getId() {
         return id;
@@ -26,15 +26,15 @@ public class Continent {
         return name;
     }
 
-    public Collection<Island> getIslands() {
-        return islands;
+    public Collection<Ocean> getOceans() {
+        return oceans;
     }
 
-    public Continent(){
+    public Ocean(){
 
     }
 
-    public Continent(String name, String imageUrl){
+    public Ocean(String name, String imageUrl){
         this.name = name;
         this.imageUrl = imageUrl;
     }
@@ -43,8 +43,8 @@ public class Continent {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Continent continent = (Continent)  o;
-        return Objects.equals(id, continent.id);
+        Ocean ocean = (Ocean)  o;
+        return Objects.equals(id, ocean.id);
     }
 
     @Override
