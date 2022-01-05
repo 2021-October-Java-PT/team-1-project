@@ -53,7 +53,7 @@ public class Populator implements CommandLineRunner {
         countryRepo.save(caboVerde);
         countryRepo.save(thailand);
 
-        Island fiji = new Island("Fiji", "image url here", "Australia", "Republic of Fiji", "South Pacific Ocean", "decript here");
+        Island fiji = new Island("Fiji","https://travel.usnews.com/Fiji/", "Australia", "Republic of Fiji", "South Pacific Ocean", "decript here");
         Island levanzo = new Island("Levanzo", "image url here", "Europe", "Italy", "Mediterranean Sea", "decript here");
         Island maui = new Island("Maui", "image url here", "North America", "US", "Central Pacific", "decript here");
         Island laTortuga = new Island("LaTortuga", "image url here", "South America", "Venezuela", "Caribbean Sea", "decript here");
