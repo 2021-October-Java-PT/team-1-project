@@ -5,10 +5,8 @@ import org.springframework.stereotype.Component;
 import org.wecancodeit.com.project.models.Continent;
 import org.wecancodeit.com.project.models.Country;
 import org.wecancodeit.com.project.models.Island;
-import org.wecancodeit.com.project.repositories.ContinentRepository;
-import org.wecancodeit.com.project.repositories.CountryRepository;
-import org.wecancodeit.com.project.repositories.HashTagRepository;
-import org.wecancodeit.com.project.repositories.IslandRepository;
+import org.wecancodeit.com.project.models.Ocean;
+import org.wecancodeit.com.project.repositories.*;
 
 import javax.annotation.Resource;
 
@@ -23,6 +21,8 @@ public class Populator implements CommandLineRunner {
     private HashTagRepository hashTagRepo;
     @Resource
     private IslandRepository islandRepo;
+    @Resource
+    private OceanRepository oceanRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -54,7 +54,7 @@ public class Populator implements CommandLineRunner {
         countryRepo.save(thailand);
 
 
-        Island fiji = new Island("Fiji", "/static/images/Fiji.jpg", "Australia", "Republic of Fiji", "South Pacific Ocean", "Fiji is a Melanesian country in the south pacific Ocean.  Its made up about 332 islands.  The climiate is mostly tropical with only slight variations throughout the seasons (Possible chance of tropical cyclonic storms from November through April).");
+        Island fiji = new Island("Fiji", "/static/images/Fiji.jpg", "Australia", "Republic of Fiji", "South Pacific Ocean", "Description");
         Island levanzo = new Island("Levanzo", "/static/images/levanzoIsland.jpg", "Europe", "Italy", "Mediterranean Sea", "Levanzo is one of the most beautiful islands in Italy.  Its surrounded by the blue green waters of the Mediterranean Sea.  The island is also characterized by the white limestone rocks and many caves to visit.  There is plenty to do ranging from trekking, beaches, diving, boat tours etc.");
         Island maui = new Island("Maui", "/static/images/mauiIsland.jpg", "North America", "US", "Central Pacific", "Maui, known also as “The Valley Isle,” is the second largest Hawaiian island. The island beloved for its world-famous beaches, the sacred Iao Valley, views of migrating humpback whales (during winter months), farm-to-table cuisine and the magnificent sunrise and sunset from Haleakala.");
         Island laTortuga = new Island("LaTortuga", "/static/images/LaTortuga.jpg", "South America", "Venezuela", "Caribbean Sea", "La Tortuga Island (Spanish: Isla La Tortuga; \"La Tortuga\" means \"the turtle\") is an uninhabited island of Venezuela, the largest in the Federal Dependencies of Venezuela. It is part of a group of islands that include the Tortuguillos and Cayo Herradura");
@@ -67,5 +67,21 @@ public class Populator implements CommandLineRunner {
         islandRepo.save(laTortuga);
         islandRepo.save(santiagoIsland);
         islandRepo.save(similanIslands);
+
+        Ocean atlantic = new Ocean("Atlantic", "imgurl");
+        Ocean pacific = new Ocean("Pacific", "imgurl");
+        Ocean indian = new Ocean("Indian", "imgurl");
+        Ocean arctic = new Ocean("Arctic", "imgurl");
+        Ocean antarctic = new Ocean("Antarctic", "imgurl");
+
+        oceanRepo.save(atlantic);
+        oceanRepo.save(pacific);
+        oceanRepo.save(indian);
+        oceanRepo.save(arctic);
+        oceanRepo.save(antarctic);
+
+
+
+
     }
 }
