@@ -8,11 +8,24 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
 
     <title>Trekking Location: Fiji</title>
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
     <link href="/css/layout.css" rel="stylesheet">
 </head>
 
 <body>
+
+<header>
+    <nav>
+    <ul>
+        <li><a th:href="@{/}">Home</a></li>
+        <li><a th:href="@{/Continents}">Continents</a></li>
+        <li> <a th:href="@{/countries}">Countries</a></li>
+        <li> <a th:href="@{/islands}">Islands</a></li>
+        <li> <a th:href="@{/about us}">About Us</a></li>
+        <li> <a th:href="@{/Team}">Team</a></li>
+    </ul>
+    </nav>
+</header>
 <section class="island-details">
     <h1 class="island-details__name" th:text="${island.name}">Fiji</h1>
     <h2 class="island-details__country" th:each="country: ${island.countries}"
