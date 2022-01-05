@@ -31,6 +31,11 @@
     <input type="hidden" name="hashTagId" th:value="${hashTag.id}">
 </form>
 
+<form th:action="'/islands/' + ${island.id} + '/add-hashtag'" method="POST">
+    <input name = "hashTagName" type="text">
+    <button type="submit">Add Hashtag</button>
+</form>
+
 <a class="nav__home" th:href="'/continents/'+${island.continent.name}">Islands</a>
 </body>
 </html>
