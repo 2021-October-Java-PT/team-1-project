@@ -16,6 +16,6 @@ public class ContinentController {
     @RequestMapping("/Continents")
     public String findAllContinents(Model model){
         model.addAttribute("continentsModel", continentRepo.findAll());
-        return "continentTemplate";
+        return "continentsTemplate";
     }
 }
