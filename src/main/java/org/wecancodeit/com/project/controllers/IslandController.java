@@ -53,7 +53,7 @@ public class IslandController {
             Island foundIsland = retrievedIsland.get();
             foundIsland.addHashTag(hashTagToAddToIsland);
             islandRepo.save(foundIsland);
-            return "redirect:/islands/" + id;
+            return "redirect:/islands" + id;
     }
         @PostMapping("/islands/{id}/delete-hashtag/{hashTagId}")
         public String deleteHashTag(@PathVariable Long id, @PathVariable Long hashTagId){
