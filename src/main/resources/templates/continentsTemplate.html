@@ -11,11 +11,39 @@
 </head>
 
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="@{/}">Home</a></li>
+            <li><a href="@{/Continents}">Continents</a></li>
+            <li> <a href="@{/countries}">Countries</a></li>
+            <li> <a href="@{/islands}">Islands</a></li>
+            <li> <a href="@{/about us}">About Us</a></li>
+            <li> <a href="@{/Team}">Team</a></li>
+        </ul>
+        <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+    </nav>
+</header>
 <h1>Travel at the Tip of Your Fingers</h1>
 
 <h2 th:each="continent:${continents}"><a th:href="@{'/continents/'+ ${continent.name}}"
-                                    th:text="${continent.name}">Continent</a>
+                                         th:text="${continent.name}">Continent</a>
 </h2>
+
+<div id="continent desc">
+
+    <h3> </h3>
+    <img src="">
+
+    <p>Spicy jalapeno bacon ipsum dolor amet salami cupim id pork chop, shoulder kevin buffalo swine tenderloin in ut short loin.
+        Do cow consectetur nostrud aute. Biltong boudin est commodo prosciutto.
+        Eiusmod ex aliqua, shankle pariatur reprehenderit shank jowl cupidatat leberkas ad lorem turkey in anim.
+    </p>
+
+
+
+
+</div>
 
 </body>
 
