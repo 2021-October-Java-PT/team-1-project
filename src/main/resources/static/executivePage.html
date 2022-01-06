@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>JAC Executive Team</title>
 
 </head>
@@ -13,15 +13,17 @@
 <div class="container">
   <header class="header">
 
-  <nav>
-
-      <li><a th:href="#Homepage">Homepage</a></li>
-      <li><a th:href="Company Mission">About Us</a></li>
-      <li><a th:href="Executive Team">Team</a></li>
-      <li><a th:href="#continents">Continents</a></li>
-      <li><a th:href="#countries">Countries</a></li>
-      <li><a th:href="Contact us">Contact us</a></li>
-  </nav>
+    <nav>
+      <a th:href="@{/}">Home</a>
+      <a th:href="@{/Continents}">Continents</a>
+      <a th:href="@{/countries}">Countries</a>
+      <a th:href="@{/islands}">Islands</a>
+      <a th:href="@{/oceans}">Oceans</a>
+      <a th:href="aboutUsTemplate.html">About Us</a>
+      <a th:href="executivePage.html">The Team</a>
+      <input type="text" placeholder="Search..">
+      <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+    </nav>
 
 </header>
 <main>
@@ -31,14 +33,14 @@
 
   <div class="col=sm-3">
     <h3>Lyzz Hans </h3>
-    <img src="Lyzz">
+    <img src="/static/images/Lyzz.jpeg">
     <small>Founder</small>
     <p> A Software Developer with a passion for creating code that improves the lives of others. I have a special interest in projects that promote equity, inclusivity, and diversity. When I am not coding, I am likely painting or hiking.</p>
   </div>
 
   <div class="col-sm-3">
     <h3>Joseph Johnson</h3>
-    <img src ="Joseph.jpeg" >
+    <img src ="/static/images/Joseph.jpeg" >
 
     <small>Adventure Associate</small>
 
@@ -51,7 +53,7 @@
   <div class="col-sm-3">
 
     <h3>Hesan Haghnazar</h3>
-    <img src ="Hesan.png">
+    <img src ="/static/images/Hesan.png">
     <small>Adventure Associate</small>
 
     <p>I am a full stack java developer with experience in information technology.
@@ -65,7 +67,7 @@
 
   <div class="col-sm-3">
 
-    <img src ="black profile pic.jpg">
+    <img src ="/static/images/black profile pic.jpg">
     <h3>Brady Gasser</h3>
     <small>Adventure Associate</small>
 
@@ -78,7 +80,7 @@
 
   <div class="col-sm-3">
 
-    <img src ="black profile pic.jpg">
+    <img src ="/static/images/black profile pic.jpg">
     <h3>Trey Browder</h3>
     <small>Adventure Associate</small>
 
