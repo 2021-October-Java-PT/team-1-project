@@ -35,3 +35,13 @@ ul {
   li a:hover {
       background-color: #111;
   }
+
+  #world{
+  height: 400px;
+  weight: 400px;
+  }
+
+.countries{
+height: 250px;
+weight: 250px;
+}
