@@ -5,24 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/styles/stylesheet.css">
   <title>JAC Executive Team</title>
 
 </head>
 <body>
 <div class="container">
   <header class="header">
-
-  <nav>
-
-      <li><a th:href="#Homepage">Homepage</a></li>
-      <li><a th:href="Company Mission">About Us</a></li>
-      <li><a th:href="Executive Team">Team</a></li>
-      <li><a th:href="#continents">Continents</a></li>
-      <li><a th:href="#countries">Countries</a></li>
-      <li><a th:href="Contact us">Contact us</a></li>
-  </nav>
-
+    <nav>
+      <a th:href="@{/}">Home</a>
+      <a th:href="@{/Continents}">Continents</a>
+      <a th:href="@{/countries}">Countries</a>
+      <a th:href="@{/islands}">Islands</a>
+      <a th:href="@{/oceans}">Oceans</a>
+      <a th:href="aboutUsTemplate.html">About Us</a>
+      <a th:href="executivePage.html">The Team</a>
+      <input type="text" placeholder="Search..">
+      <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+    </nav>
 </header>
 <main>
   <div class ="headline">
