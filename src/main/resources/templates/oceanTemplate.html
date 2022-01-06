@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Ocean</title>
 </head>
 <body>
+<header>
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/Continents}">Continents</a>
+        <a th:href="@{/countries}">Countries</a>
+        <a th:href="@{/islands}">Islands</a>
+        <a th:href="@{/oceans}">Oceans</a>
+        <a th:href="aboutUsTemplate.html">About Us</a>
+        <a th:href="executivePage.html">The Team</a>
+        <input type="text" placeholder="Search..">
+        <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+    </nav>
+</header>
 <h1>Ocean</h1>
 </body>
 </html>

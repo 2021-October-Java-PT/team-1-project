@@ -3,7 +3,7 @@ p{
 }
 
 body{
-  background-color: light blue;
+  background-color: lightblue;
   display: block;
   min-width: 750px;
   margin-top: 0;
@@ -30,7 +30,7 @@ ul {
 
   li a {
       display: block;
-      color: white
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -42,7 +42,7 @@ ul {
 
   img{
       height: 500px;
-      width: 500px
+      width: 500px;
       border: 2px;
       border-color: blue;
   }
