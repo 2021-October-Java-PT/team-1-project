@@ -1,111 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAC Executive Team</title>
 
-    <link rel="stylesheet" href="/styles/style.css" type = text/css>
+    <link rel="stylesheet" href="styles/style.css" type=text/css> </head> <body>
+    <header>
 
-</head>
-<body>
-<header>
+        <nav>
+            <ul>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/Continents}">Continents</a></li>
+                <li><a th:href="@{/countries}">Countries</a></li>
+                <li><a th:href="@{/islands}">Islands</a></li>
+                <li><a th:href="@{/oceans}">Oceans</a></li>
+                <li><a th:href="aboutUsTemplate.html">About Us</a></li>
+                <li><a th:href="executivePage.html">The Team</a></li>
+                <li><a th:href="reviews.html">Reviews</a></li>
+                <input type="text" placeholder="Search..">
+            </ul>
+            <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+        </nav>
 
-    <nav>
-        <ul>
-            <li><a th:href="@{/}">Home</a></li>
-            <li><a th:href="@{/Continents}">Continents</a></li>
-            <li><a th:href="@{/countries}">Countries</a></li>
-            <li><a th:href="@{/islands}">Islands</a></li>
-            <li><a th:href="@{/oceans}">Oceans</a></li>
-            <li><a th:href="aboutUsTemplate.html">About Us</a></li>
-            <li><a th:href="executivePage.html">The Team</a></li>
-            <li><a th:href="reviews.html">Reviews</a></li>
-            <input type="text" placeholder="Search..">
-        </ul>
-        <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
-    </nav>
+    </header>
+    <main>
+        <div class="headline">
+            <h2>Oceans</h2>
+        </div>
 
-</header>
-<main>
-    <div class ="headline">
-        <h2>Oceans</h2>
-    </div>
+        <div class="col=sm-3">
+            <h3>Southern Ocean</h3>
+            <img src="images/southernocean.jpg">
 
-    <div class="col=sm-3">
-        <h3>Southern Ocean</h3>
-        <img src="">
+            <p>Southern Ocean, also called Antarctic Ocean, body of salt water covering approximately one-sixteenth of
+                Earth's total ocean area. The Southern Ocean is made up of the portions of the world ocean south of the
+                Pacific, Atlantic, and Indian oceans and their tributary seas surrounding Antarctica below 60° S. It is
+                unbroken by any other continental landmass. Its narrowest constriction is the Drake Passage, 600 miles
+                (about 1,000 km) wide, between South America and the tip of the Antarctic Peninsula. In terms of area,
+                only the Arctic Ocean is smaller.</p>
+        </div>
 
-        <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
-            ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison nisi.
-            Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
-            Ea irure labore cow, commodo nostrud non cillum pork loin</p>
-    </div>
+        <div class="col-sm-3">
+            <h3>Atlantic Ocean</h3>
+            <img src="images/atlanticocean.jpg">
 
-    <div class="col-sm-3">
-        <h3>Atlantic Ocean</h3>
-        <img src ="" >
+            <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
+                ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison
+                nisi.
+                Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
+                Ea irure labore cow, commodo nostrud non cillum pork loin</p>
 
-        <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
-            ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison nisi.
-            Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
-            Ea irure labore cow, commodo nostrud non cillum pork loin</p>
+        </div>
 
-    </div>
+        <div class="col-sm-3">
 
-    <div class="col-sm-3">
-
-        <h3>Pacific Ocean</h3>
-        <img src ="">
-
-
-        <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
-            ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison nisi.
-            Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
-            Ea irure labore cow, commodo nostrud non cillum pork loin</p>
-
-    </div>
-
-    </div>
-
-    <div class="col-sm-3">
-
-        <img src ="">
-        <h3>Indian Ocean</h3>
+            <h3>Pacific Ocean</h3>
+            <img src="images/pacificocean.jpg">
 
 
-        <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
-            ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison nisi.
-            Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
-            Ea irure labore cow, commodo nostrud non cillum pork loin</p>
+            <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
+                ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison
+                nisi.
+                Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
+                Ea irure labore cow, commodo nostrud non cillum pork loin</p>
 
-    </div>
+        </div>
 
-    <div class="col-sm-3">
+        </div>
 
-        <img src ="">
-        <h3>Arctic Ocean</h3>
+        <div class="col-sm-3">
 
-        <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
-            ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison nisi.
-            Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
-            Ea irure labore cow, commodo nostrud non cillum pork loin.</p>
-
-    </div>
+            <img src="images/indianocean.jpg">
+            <h3>Indian Ocean</h3>
 
 
-    </section>
+            <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
+                ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison
+                nisi.
+                Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
+                Ea irure labore cow, commodo nostrud non cillum pork loin</p>
+
+        </div>
+
+        <div class="col-sm-3">
+
+            <img src="images/arcticocean.jpg">
+            <h3>Arctic Ocean</h3>
+
+            <p>Spicy jalapeno bacon ipsum dolor amet chicken in leberkas,
+                ut prosciutto jowl sirloin hamburger ball tip tenderloin drumstick ham hock cupim cow. Ut sed venison
+                nisi.
+                Pancetta laboris incididunt corned beef sed bresaola capicola qui short loin swine buffalo burgdoggen.
+                Ea irure labore cow, commodo nostrud non cillum pork loin.</p>
+
+        </div>
 
 
-    </div>
-</main>
+        </section>
 
 
-<footer>
-    &copy; JAC 2021
-</footer>
+        </div>
+    </main>
 
-</body>
+
+    <footer>
+        &copy; JAC 2021
+    </footer>
+
+    </body>
+
 </html>
