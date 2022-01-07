@@ -45,3 +45,43 @@ ul {
 height: 250px;
 weight: 250px;
 }
+
+.bio{
+height: 400px;
+weight: 400px;
+}
+
+body {
+  margin: 40px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+
+}
+
+.col-sm-3 {
+  background-color: lightblue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+p {
+color: black;
+}
+
+h1 {
+color: black;
+}
+
+h2{
+color:black;
+}
+
+small{
+color:black;
+}
