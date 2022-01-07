@@ -5,28 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock About Us</title>
+    <title>About Us</title>
 
     <link rel="stylesheet" href="/styles/style.css" type=text/css>
 
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a th:href="@{/}">Home</a></li>
-            <li><a th:href="@{/Continents}">Continents</a></li>
-            <li><a th:href="@{/countries}">Countries</a></li>
-            <li><a th:href="@{/islands}">Islands</a></li>
-            <li><a th:href="@{/oceans}">Oceans</a></li>
-            <li><a href="aboutUsTemplate.html">About Us</a></li>
-            <li><a href="executivePage.html">The Team</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <input type="text" placeholder="Search..">
-        </ul>
-    </nav>
+<div class="container">
+    <a id="wuhan-coronavirus-travel-restrictions" href="https://travel.state.gov/content/travel/en/traveladvisories/ea/requirements-for-air-travelers-to-the-us.html" class="alert__link"><span class="alert__title">COVID-19 UPDATE</span> <span class="alert__description">JAC wants you to #stayhealthy and #stayinformed. Learn more about current health protocols and travel requirements. </span></a>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Continents">Continents</a></li>
+                <li><a href="/countries">Countries</a></li>
+                <li><a href="/islands">Islands</a></li>
+                <li><a href="/oceans">Oceans</a></li>
+                <li><a href="aboutUsTemplate.html">About Us</a></li>
+                <li><a href="executivePage.html">The Team</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <input type="text" placeholder="Search..">
+            </ul>
+            <!--                <a th:href="@{/aboutUsTemplate">About Us</a>-->
+        </nav>
 
-</header>
+    </header>
 <main>
     <section id="about us">
 
